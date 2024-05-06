@@ -1,0 +1,33 @@
+<!-- http://127.0.0.1:5500/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="nextQuestion()">
+    <div class="container">
+       <div class="heading">
+        <div style="font-size: 30px;font-weight: 600;">Quiz App <span id="timer"></span>
+        </div>
+       </div>
+       <br><br>
+       <div class="inputs">
+           <p id="ques" style="color: white;font-weight: 700;">Q: </p><br><br>
+        <input type="radio" value="1" onclick="target()" name="option">
+        <label for="" id="opt1"></label><br><br>
+        <input type="radio" value="2" onclick="target()" name="option">
+        <label for="" id="opt2"></label><br><br>
+        <input type="radio" value="3" onclick="target()" name="option">
+        <label for="" id="opt3"></label><br><br>
+       </div>
+        <div class="btn"><button id="submit" onclick="nextQuestion()">Next</button></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
